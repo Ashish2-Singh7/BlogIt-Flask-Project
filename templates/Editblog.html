@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Edit Blog{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/addPage.css') }}">
+{% endblock styles %}
+{% block body %}
+
+<main>
+    <section class="add-blog-hero">
+        <h1>Edit your Blog Post</h1>
+        <p>Make your changes, then hit publish to share your updated perspective.</p>
+    </section>
+
+    <section class="blog-form-container">
+        <form class="blog-form" action="/blog/edit/{{blog.id}}" method="post">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter your blog title" value="{{blog.title}}" required />
+            </div>
+
+            <div class="form-group">
+                <label for="subtitle">Subtitle</label>
+                <input type="text" id="subtitle" name="subtitle" placeholder="Enter a subtitle (optional)" value="{{blog.subtitle}}"/>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" placeholder="Your name" value="{{blog.author}}" required />
+            </div>
+
+            <div class="form-group">
+                <label for="content">Blog Content</label>
+                <textarea id="content" rows=10 name="content" placeholder="Write your blog content here..."
+                    required>{{blog.content}}</textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Publish Blog Post</button>
+        </form>
+    </section>
+</main>
+
+
+{% endblock body %}

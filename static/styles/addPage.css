@@ -1,0 +1,112 @@
+  /* Add Blog hero section */
+  .add-blog-hero {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  
+  .add-blog-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .add-blog-hero p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Form styles */
+  .blog-form-container {
+    padding: 20px 0 60px;
+  }
+  
+  .blog-form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0,102,204,0.1);
+    outline: none;
+  }
+  
+  .submit-button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 30px auto 0;
+  }
+  
+  .submit-button:hover {
+    background-color: #0055b3;
+    transform: translateY(-2px);
+  }
+  
+  .submit-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .add-blog-hero {
+      padding: 40px 0;
+    }
+    
+    .add-blog-hero h1 {
+      font-size: 32px;
+    }
+    
+    header {
+      flex-direction: column;
+    }
+    
+    nav ul {
+      margin-top: 15px;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    .blog-form {
+      padding: 20px;
+    }
+  }

@@ -1,0 +1,126 @@
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Recent posts section */
+.recent-posts {
+    padding: 20px 0 60px;
+}
+
+.recent-posts h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.recent-posts h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #0066cc;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+    height: 180px;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin: 0;
+    flex: 1;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-actions {
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.post-meta {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.post-excerpt {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #0066cc;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+}
+
+.read-more:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #0066cc;
+    transition: width 0.3s ease;
+}
+
+.read-more:hover:after {
+    width: 100%;
+}

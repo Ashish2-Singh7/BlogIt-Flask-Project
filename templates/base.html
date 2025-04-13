@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %} | BlogIt</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/common.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}">
+    {% block styles %}{% endblock styles %}
+</head>
+
+<body>
+
+    <div class="blog-container">
+        <header>
+            <a class="logo" href="/">BlogIt</a>
+            <nav>
+                <ul>
+                    <li><a href="/" class="{{'active' if current_page == 'home' else ''}}">Home</a></li>
+                    <li><a href="/about" class="{{'active' if current_page=='about' else ''}}">About</a></li>
+                    <li><a href="/add" class="{{'active' if current_page=='addBlog' else ''}}">Add Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block body %}
+
+        {% endblock body %}
+    </div>
+    <footer>
+        <p>&copy; 2025 BlogIt. All rights reserved.</p>
+    </footer>
+</body>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+</html>

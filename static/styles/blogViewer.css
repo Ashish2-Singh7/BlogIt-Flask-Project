@@ -1,0 +1,123 @@
+    /* Blog post styles */
+    .blog-post {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 40px;
+        margin-bottom: 40px;
+    }
+
+    .blog-title {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #333;
+        text-align: center;
+    }
+
+    .blog-subtitle {
+        font-size: 20px;
+        color: #666;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .blog-meta {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eaeaea;
+        text-align: center;
+    }
+
+    .blog-author {
+        font-weight: 500;
+        margin-right: 15px;
+    }
+
+    .blog-content {
+        font-size: 17px;
+        line-height: 1.8;
+        color: #444;
+    }
+
+    .blog-content p {
+        margin-bottom: 25px;
+    }
+
+    .blog-actions {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #0066cc;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #0055b3;
+    }
+
+    /* Loading and Not Found states */
+    .loading {
+        text-align: center;
+        padding: 50px 0;
+        font-size: 18px;
+        color: #777;
+    }
+
+    .not-found {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 40px;
+        text-align: center;
+    }
+
+    .not-found h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .not-found p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 25px;
+    }
+
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .blog-post {
+            padding: 20px;
+        }
+
+        .blog-title {
+            font-size: 28px;
+        }
+
+        .blog-subtitle {
+            font-size: 18px;
+        }
+
+        header {
+            flex-direction: column;
+        }
+
+        nav ul {
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+    }

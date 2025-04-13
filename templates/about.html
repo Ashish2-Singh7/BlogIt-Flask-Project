@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
+{% endblock styles %}
+{% block body %}
+
+<main>
+    <section class="about-hero">
+        <h1>About BlogIt</h1>
+        <p>A platform where ideas come to life</p>
+    </section>
+
+    <section class="about-content">
+        <div class="about-card">
+            <h2>Our Project</h2>
+            <p>
+                BlogIt is a simple and user-friendly blogging web application built using Flask, designed to let anyone
+                share their thoughts freely. The platform allows users to create, read, update, and delete blog posts
+                with ease, offering a smooth CRUD experience. Built using pure HTML and CSS for the frontend and Python
+                with Flask on the backend, BlogIt emphasizes clean design and straightforward functionality.
+            </p>
+            <p>
+                Whether you're a student, writer, or casual blogger, BlogIt provides a minimal yet effective space to
+                express ideas and connect through content. This project was developed as part of a college assignment to
+                demonstrate practical knowledge of web development and fundamental web technologies.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h2>Our Team</h2>
+            <div class="values-container">
+                <div class="value-item">
+                    <h3>Ashish Kumar Singh</h3>
+                    <p>We foster an environment where unique ideas and perspectives are valued and celebrated.</p>
+                </div>
+
+                <div class="value-item">
+                    <h3>Aditya Kumar</h3>
+                    <p>We believe that publishing should be accessible to everyone, regardless of technical expertise.
+                    </p>
+                </div>
+
+                <div class="value-item">
+                    <h3>Surya</h3>
+                    <p>We're building more than just a platform; we're cultivating a supportive community of writers and
+                        readers.</p>
+                </div>
+
+                <div class="value-item">
+                    <h3>Ritik Sharma</h3>
+                    <p>We're committed to providing the tools that help writers produce their best work.</p>
+                </div>
+
+                <div class="value-item">
+                    <h3>Bhavik</h3>
+                    <p>We're committed to providing the tools that help writers produce their best work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% endblock body %}
