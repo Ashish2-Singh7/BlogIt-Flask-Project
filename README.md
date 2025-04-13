@@ -1,4 +1,3 @@
-# 📝 BlogIt – A Flask-Based Blogging Web App
 <div>
   <h1> BlogIt – A Flask-Based Blogging Web App 📝 <img src="./static/favicon.ico" width="50" alt="BlogIt Logo" align="left"></h1>
 </div>
